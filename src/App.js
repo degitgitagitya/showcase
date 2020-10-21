@@ -1,26 +1,33 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import Landing from './Components/Landing';
+import Navbar from './Components/Navbar';
+import Portfolio from './Components/Portfolio';
+import Footer from './Components/Footer';
+import { scroller, Element } from 'react-scroll';
 
-function App() {
+const App = () => {
+  const scrollTo = (param) => {
+    scroller.scrollTo(param, {
+      duration: 800,
+      delay: 0,
+      smooth: 'easeInOutQuart',
+    });
+  };
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <React.Fragment>
+      <div style={{ backgroundColor: '#f1eee9' }} className='shadow-sm mb-3'>
+        <Navbar scrollTo={scrollTo} />
+        <Landing />
+      </div>
+      <Element name='portfolio' className='element'>
+        <Portfolio />
+      </Element>
+      <div style={{ backgroundColor: '#f1eee9' }} className='shadow-sm mt-3'>
+        <Footer />
+      </div>
+    </React.Fragment>
   );
-}
+};
 
 export default App;
