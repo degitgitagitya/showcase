@@ -12,7 +12,7 @@ const DATA_EXPERIENCE = [
 
 const Experience = () => {
   return (
-    <Container classNam='mt-3'>
+    <Container>
       <Row>
         <Col>
           <h3>Experience</h3>

@@ -20,7 +20,6 @@ const App = () => {
     <React.Fragment>
       <Element name='welcome' className='element'>
         <Navbar scrollTo={scrollTo} />
-        <br />
         <div style={{ backgroundColor: '#f1eee9' }} className='shadow-sm mb-3'>
           <Landing />
         </div>
