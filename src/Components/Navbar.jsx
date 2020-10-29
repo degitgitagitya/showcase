@@ -23,12 +23,16 @@ const Navbar = (props) => {
         <NavHover className='p-2'>Welcome</NavHover>
       </NavLink>
       <NavLink className='text-dark mr-5 d-none d-sm-block' href='#'>
-        <NavHover onClick={props.scrollTo('portfolio')} className='p-2'>
+        <NavHover onClick={() => {
+          props.scrollTo('portfolio')
+        }} className='p-2'>
           My Design
         </NavHover>
       </NavLink>
       <NavLink className='text-dark mr-5 d-none d-sm-block' href='#'>
-        <NavHover className='p-2'>Education</NavHover>
+        <NavHover onClick={() => {
+          props.scrollTo('education')
+        }} className='p-2'>Education</NavHover>
       </NavLink>
       <NavLink className='text-dark mr-5 d-none d-sm-block' href='#'>
         <NavHover className='p-2'>Experience</NavHover>
