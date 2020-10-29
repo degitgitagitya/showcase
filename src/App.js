@@ -5,10 +5,10 @@ import Portfolio from './Components/Portfolio';
 import Footer from './Components/Footer';
 import { scroller, Element } from 'react-scroll';
 import Education from './Components/Education';
+import Experience from './Components/Experience';
 
 const App = () => {
   const scrollTo = (param) => {
-    console.log('asd')
     scroller.scrollTo(param, {
       duration: 800,
       delay: 0,
@@ -18,15 +18,21 @@ const App = () => {
 
   return (
     <React.Fragment>
-      <div style={{ backgroundColor: '#f1eee9' }} className='shadow-sm mb-3'>
+      <Element name='welcome' className='element'>
         <Navbar scrollTo={scrollTo} />
-        <Landing />
-      </div>
+        <br />
+        <div style={{ backgroundColor: '#f1eee9' }} className='shadow-sm mb-3'>
+          <Landing />
+        </div>
+      </Element>
       <Element name='portfolio' className='element'>
         <Portfolio />
       </Element>
       <Element name='education' className='element'>
         <Education />
+      </Element>
+      <Element name='experience' className='element'>
+        <Experience />
       </Element>
       <div style={{ backgroundColor: '#f1eee9' }} className='shadow-sm mt-3'>
         <Footer />

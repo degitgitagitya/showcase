@@ -18,24 +18,50 @@ const Navbar = (props) => {
 
   const toggle = () => setIsOpen(!isOpen);
   return (
-    <Nav horizontal='center' className='py-1 shadow-sm bg-white'>
+    <Nav
+      horizontal='center'
+      className='py-1 shadow-sm bg-white'
+      // style={{ position: 'fixed', width: '100%', zIndex: '999' }}
+    >
       <NavLink className='text-dark mr-5 d-none d-sm-block' href='#'>
-        <NavHover className='p-2'>Welcome</NavHover>
+        <NavHover
+          onClick={() => {
+            props.scrollTo('welcome');
+          }}
+          className='p-2'
+        >
+          Welcome
+        </NavHover>
       </NavLink>
       <NavLink className='text-dark mr-5 d-none d-sm-block' href='#'>
-        <NavHover onClick={() => {
-          props.scrollTo('portfolio')
-        }} className='p-2'>
+        <NavHover
+          onClick={() => {
+            props.scrollTo('portfolio');
+          }}
+          className='p-2'
+        >
           My Design
         </NavHover>
       </NavLink>
       <NavLink className='text-dark mr-5 d-none d-sm-block' href='#'>
-        <NavHover onClick={() => {
-          props.scrollTo('education')
-        }} className='p-2'>Education</NavHover>
+        <NavHover
+          onClick={() => {
+            props.scrollTo('education');
+          }}
+          className='p-2'
+        >
+          Education
+        </NavHover>
       </NavLink>
       <NavLink className='text-dark mr-5 d-none d-sm-block' href='#'>
-        <NavHover className='p-2'>Experience</NavHover>
+        <NavHover
+          onClick={() => {
+            props.scrollTo('experience');
+          }}
+          className='p-2'
+        >
+          Experience
+        </NavHover>
       </NavLink>
       <NavbarToggler
         color='dark '
@@ -47,22 +73,46 @@ const Navbar = (props) => {
       <Collapse isOpen={isOpen} navbar>
         <Nav className='mr-auto px-3' navbar>
           <NavItem>
-            <NavLink className='text-dark' href='/components/'>
+            <NavLink
+              onClick={() => {
+                props.scrollTo('welcome');
+              }}
+              className='text-dark'
+              href='#'
+            >
               Welcome
             </NavLink>
           </NavItem>
           <NavItem>
-            <NavLink className='text-dark' href='/components/'>
+            <NavLink
+              onClick={() => {
+                props.scrollTo('portfolio');
+              }}
+              className='text-dark'
+              href='#'
+            >
               My Design
             </NavLink>
           </NavItem>
           <NavItem>
-            <NavLink className='text-dark' href='/components/'>
+            <NavLink
+              onClick={() => {
+                props.scrollTo('education');
+              }}
+              className='text-dark'
+              href='#'
+            >
               Education
             </NavLink>
           </NavItem>
           <NavItem>
-            <NavLink className='text-dark' href='/components/'>
+            <NavLink
+              onClick={() => {
+                props.scrollTo('experience');
+              }}
+              className='text-dark'
+              href='#'
+            >
               Experience
             </NavLink>
           </NavItem>
