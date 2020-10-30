@@ -107,7 +107,7 @@ const Navbar = (props) => {
           <NavItem>
             <NavLink
               onClick={() => {
-                props.scrollTo('portfolio');
+                props.scrollTo('achievement');
               }}
               className='text-dark'
               href='#'

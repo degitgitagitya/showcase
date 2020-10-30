@@ -25,7 +25,7 @@ const Achievement = () => {
           </p>
         </Col>
         <Col xs='12' md='8'>
-          <ReactPlayer url='https://youtu.be/h3Z0WRlHzjw' />
+          <ReactPlayer width='100%' url='https://youtu.be/h3Z0WRlHzjw' />
         </Col>
       </Row>
       <hr />
@@ -43,7 +43,7 @@ const Achievement = () => {
           </p>
         </Col>
         <Col xs='12' md='8'>
-          <ReactPlayer url='https://youtu.be/iaVPUnuy1TY' />
+          <ReactPlayer width='100%' url='https://youtu.be/iaVPUnuy1TY' />
         </Col>
       </Row>
       <hr />
@@ -61,7 +61,7 @@ const Achievement = () => {
           </p>
         </Col>
         <Col xs='12' md='8'>
-          <ReactPlayer url='https://youtu.be/VTuvIOCYQXU' />
+          <ReactPlayer width='100%' url='https://youtu.be/VTuvIOCYQXU' />
         </Col>
       </Row>
     </Container>
