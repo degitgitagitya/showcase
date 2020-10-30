@@ -1,8 +1,6 @@
 import React from 'react';
 import { Col, Container, Row } from 'reactstrap';
 import styled from 'styled-components';
-import First from '../Assets/First.png';
-import Second from '../Assets/Second.png';
 
 const ImageContainer = styled.img`
   object-fit: cover;
@@ -19,7 +17,7 @@ function Portfolio() {
           <hr />
           <div className='w-100'>
             <ImageContainer
-              src={First}
+              src='https://ik.imagekit.io/4cly7cecrazuh/Kedua_Q8jPEbqZes.jpeg'
               alt='first-portfolio'
               className='mt-2'
             />
@@ -30,7 +28,7 @@ function Portfolio() {
         <Col xs='12' md='6'>
           <div className='w-100'>
             <ImageContainer
-              src={Second}
+              src='https://ik.imagekit.io/4cly7cecrazuh/Pertama_PYU_CCma6c.jpeg'
               alt='second-portfolio'
               className='mt-2'
             />

@@ -8,7 +8,7 @@ const ImageContainer = styled.div`
 
 const Image = styled.img`
   width: 100%;
-  margin: 0 0 -30px 0;
+  margin: -200px 0 -30px 0;
 `;
 
 function Landing() {
@@ -18,17 +18,19 @@ function Landing() {
         <Col xs='12' md='5' className='p-4'>
           <ImageContainer className='shadow-sm border border-light'>
             <Image
-              src='https://image.shutterstock.com/image-photo/close-portrait-smiling-handsome-man-260nw-1011569245.jpg'
-              alt=''
+              src='https://ik.imagekit.io/4cly7cecrazuh/WhatsApp_Image_2020-10-30_at_7.01.15_PM_G0heG44ByJz.jpeg'
+              alt='profile'
             />
           </ImageContainer>
         </Col>
         <Col xs='12' md='7'>
-          <h3 style={{ color: '#402f1c' }}>Hello, My Name Is John Doe</h3>
+          <h3 style={{ color: '#402f1c' }}>
+            Hello, My Name is Nurmaulani Mustika Tresna
+          </h3>
           <h4 style={{ color: '#895423' }}>
             I'm a passionate graphic designer
           </h4>
-          <p>You can take a look of my design here</p>
+          <p>This is my personal website</p>
         </Col>
       </Row>
     </Container>

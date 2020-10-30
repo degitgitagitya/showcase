@@ -6,6 +6,7 @@ import Footer from './Components/Footer';
 import { scroller, Element } from 'react-scroll';
 import Education from './Components/Education';
 import Experience from './Components/Experience';
+import Achievement from './Components/Achievement';
 
 const App = () => {
   const scrollTo = (param) => {
@@ -26,6 +27,9 @@ const App = () => {
       </Element>
       <Element name='portfolio' className='element'>
         <Portfolio />
+      </Element>
+      <Element name='achievement' className='element'>
+        <Achievement />
       </Element>
       <Element name='education' className='element'>
         <Education />

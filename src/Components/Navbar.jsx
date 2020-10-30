@@ -46,6 +46,16 @@ const Navbar = (props) => {
       <NavLink className='text-dark mr-5 d-none d-sm-block' href='#'>
         <NavHover
           onClick={() => {
+            props.scrollTo('achievement');
+          }}
+          className='p-2'
+        >
+          Achievement
+        </NavHover>
+      </NavLink>
+      <NavLink className='text-dark mr-5 d-none d-sm-block' href='#'>
+        <NavHover
+          onClick={() => {
             props.scrollTo('education');
           }}
           className='p-2'
@@ -92,6 +102,17 @@ const Navbar = (props) => {
               href='#'
             >
               My Design
+            </NavLink>
+          </NavItem>
+          <NavItem>
+            <NavLink
+              onClick={() => {
+                props.scrollTo('portfolio');
+              }}
+              className='text-dark'
+              href='#'
+            >
+              Achievement
             </NavLink>
           </NavItem>
           <NavItem>
